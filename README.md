@@ -2,4 +2,4 @@
 Site simples a ser feito para esta atividade.
 
 ## Autor
--**Luigi Aranha de Andrade
+- Luigi Aranha de Andrade
