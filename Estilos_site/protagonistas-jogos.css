@@ -117,7 +117,7 @@ main p{
 
 .imagem-descritiva img {
     width: 40%;
-    height: 150px;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -125,5 +125,38 @@ main p{
     text-align: justify;
     font-size: 16px;
     color: #333;
-    margin: 0;
+    margin-top: 40px;
+    padding: auto 0;
+}
+
+.linha-separacao{
+    border-top: 3px solid orangered;
+}
+
+.video-propriedades{
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 35px; /* Espaço abaixo do vídeo */
+}
+
+.video-propriedades iframe {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height:100%;
+}
+
+.video-titulo{
+    margin: 20px 40px;
+    color: orange;
+}
+
+.primeiro-titulo{
+    margin: 40px -25px;
+    color: orangered;
 }

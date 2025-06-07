@@ -51,6 +51,7 @@ header ul li{
     height: 120px;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid orange;
 }
 
 .introducao h1{
@@ -59,8 +60,10 @@ header ul li{
 
 .introducao p{
     text-align: justify;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -15px;
+    margin-bottom: 30px;
 }
 
 .rodape{
@@ -71,4 +74,21 @@ header ul li{
     background-color: white;
     border-radius: 10px;
     padding: 1px 10px;
+    border: 2px solid orange;
 }
+
+.introducao .primeiro-titulo{
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 100px;
+    width: 16%;
+    height: 10%;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-top: -100px;
+    border: 2px solid orange;
+}
+
