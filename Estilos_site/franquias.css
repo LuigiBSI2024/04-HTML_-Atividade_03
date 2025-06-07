@@ -1,0 +1,77 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-image: url('../Imagens_site/papeis_de_parede/papel-de-parede-principal.svg');
+    background-repeat: repeat;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1px 10px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header ul{
+    list-style-type: none;
+    padding-left: 10px;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li{
+    padding: 0 25px;
+}
+
+.empresas-criadoras{
+    margin-top: 90px;
+    background-color: white;
+    margin-top: 50px;
+    padding: 1px 10px;
+}
+
+.empresas-criadoras h1{
+    padding-left: 25px;
+    padding-right: 25px;
+    color: orange;
+}
+
+.empresas-criadoras p{
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: -10px;
+    color: black;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    min-height: 100vh;
+    margin-top: 10px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+    /*Isto existe para garantir a existência das 3 colunas criadas acima, também serve
+    para configuração.*/
+}
+
+.conteudo {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: -5px 20px;
+}
+
