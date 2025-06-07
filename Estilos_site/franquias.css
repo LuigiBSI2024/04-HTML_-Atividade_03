@@ -61,17 +61,41 @@ header ul li{
     grid-template-columns: 1fr 6fr 1fr;
     min-height: 100vh;
     margin-top: 10px;
+    grid-template-rows: auto 1fr auto; /* conteúdo cresce no meio */
+    grid-template-areas: 
+    ". . ."
+    "coluna-esquerda conteudo coluna-direita"
+    "rodape rodape rodape";
 }
 
-.coluna-esquerda,
+.coluna-esquerda{
+    grid-area: coluna-esquerda;
+}
+
 .coluna-direita {
-    /*Isto existe para garantir a existência das 3 colunas criadas acima, também serve
-    para configuração.*/
+    grid-area: coluna-direita;
 }
 
 .conteudo {
     background-color: #fff;
     border-radius: 10px;
     margin: -5px 20px;
+    grid-area: conteudo;
 }
 
+.rodape{
+    grid-area: rodape;
+    background-color: white;
+    border-radius: 10px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin: 10px 30px 20px 60%; /* centraliza horizontalmente */
+    border: 2px solid orange;
+    margin-bottom: 20px;
+}
+
+.rodape p{
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 2px;
+}
