@@ -101,6 +101,22 @@ header ul li{
 }
 
 .primeiro-titulo{
-    margin: 40px -25px;
+    margin: -1px -5px;
     color: orangered;
+}
+
+.linha-separacao{
+    border-top: 3px solid orangered;
+}
+
+.sugestoes-links{
+    display: flex;
+    margin: 20px 0;
+}
+
+.sugestoes-links a{
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: orange;
 }
