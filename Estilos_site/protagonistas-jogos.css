@@ -45,9 +45,6 @@ main h1{
     padding-left: 25px;
     padding-right: 25px;
     color: orange;
-
-    
-    
 }
 
 main p{
@@ -105,6 +102,28 @@ main p{
     padding-right: 2px;
 }
 
-img{
-    
+.lista-imagens {
+    display: flex;
+    flex-direction: column;  /* cada bloco na vertical */
+    gap: 20px;                /* espaço entre blocos */
+}
+
+.imagem-descritiva {
+    display: flex;
+    flex-direction: row;      /* imagem ao lado do texto */
+    gap: 20px;
+    align-items: flex-start;  /* alinha imagem e texto no topo */
+}
+
+.imagem-descritiva img {
+    width: 40%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.imagem-descritiva p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
 }
