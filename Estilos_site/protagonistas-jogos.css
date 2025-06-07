@@ -35,6 +35,76 @@ header ul li{
     padding: 0 25px;
 }
 
+main{
+    margin-top: 90px;
+    margin-top: 50px;
+    padding: 1px 10px;
+}
+
+main h1{
+    padding-left: 25px;
+    padding-right: 25px;
+    color: orange;
+
+    
+    
+}
+
+main p{
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: -10px;
+    color: black;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    min-height: 100vh;
+    margin-top: 10px;
+    grid-template-rows: auto 1fr auto; /* conteúdo cresce no meio */
+    grid-template-areas: 
+    ". . ."
+    "coluna-esquerda conteudo coluna-direita"
+    "rodape rodape rodape";
+}
+
+.layout .estilo-background{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.coluna-esquerda{
+    grid-area: coluna-esquerda;
+}
+
+.coluna-direita {
+    grid-area: coluna-direita;
+}
+
+.conteudo {
+    margin: -5px 20px;
+    grid-area: conteudo;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid orange;
+    
+    width: 35%;              /*Reduz a largura da caixa */
+    margin: 10px 10px 4% 60% ;  /* centraliza horizontalmente */
+    padding: 10px 15px;      /* espaço interno*/
+}
+
+.rodape p{
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 2px;
+}
+
 img{
     
 }
